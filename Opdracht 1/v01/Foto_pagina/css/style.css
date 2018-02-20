@@ -1,0 +1,172 @@
+/* Huisstijl Transavia toegepast */
+/* CSS RESET */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding:0;
+	border:0;
+}
+
+
+/* Body */
+body{
+	background-color: #f2f2f2;
+	font-family: 'Montserrat', sans-serif;
+	color: #232323;
+}
+
+
+h1{
+}
+
+/* Algemeen */ 
+
+
+
+/* Header */ 
+
+header{
+	background-image: url(../img/bora-bora-french-polynesia-sunset-ocean.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	height: 10rem;
+	min-width: 100%;
+	position: fixed;
+	margin:0 auto;
+	top:0;
+	box-shadow: 0 0.3125em 0.625em 0 rgba(0,0,0,.15);
+}
+
+form{
+	margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.voorkeur{
+	display: block;
+  color: black;
+  font-size: 16px;
+  background-color: #fff;
+	padding:1.5rem 1rem 0rem 2rem;
+	width: 30rem;
+	margin: 0 auto;
+	margin-top: -0.2rem;
+}
+
+
+
+span i{
+	color: #000;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 0px 3px 3px 0px;
+}
+
+input{
+	width: 30rem;
+    height: 2.5rem;
+    border-radius: 3px 0px 0px 3px;
+    padding-left: 1rem;
+	box-shadow: 0 0.3125em 0.625em 0 rgba(0,0,0,.15);
+}
+
+ul{
+	background-color: #fff;
+	padding:0rem 1rem 0.5rem 1rem;
+	width: 30rem;
+	margin: 0 auto;
+	border-radius: 0 0 6px 6px;
+}
+
+li{
+	cursor: pointer;
+	width: 2rem;
+	height: 2rem;
+	color: azure;
+	display: inline-block;
+	margin: 1rem;
+	border-color: #DEDEDE;
+	border-style: solid;
+  border-width: 3px;
+	border-radius: 5px;
+}
+
+.block_red{
+	background-color: red;
+}
+
+.block_blue{
+	background-color: blue;
+}
+
+.block_green{
+	background-color: green;
+}
+/* main */
+main{
+	margin-top:10.5rem;
+	padding:1rem;
+}
+
+
+header section { 
+  padding: .5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap; 
+  flex-flow: row wrap; 
+  display: -webkit-box;
+  display: flex;
+}
+
+
+section.content_art{ 
+ column-count: 3;
+	column-fill:auto;
+	box-sizing: border-box;
+	column-gap: 21px;
+}
+
+article { 
+ box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+}
+
+section article img { 
+  width: 100%; 
+  height: auto; 
+	border-radius:6px;
+	margin-bottom: 16px;
+}
+
+.hide {
+	display:none;
+}
+
+.colorselected{
+	transform: scale(1.5);
+}
+
+/* Media Queries */
+
+/* Tablet formaat */
+@media (max-width:63em) {
+section.content_art{ 
+ column-count: 2;
+	}
+
+/* Klein Tablet formaat */
+@media (max-width:48em) {
+section.content_art{ 
+ column-count: 2;
+	}
+	
+/* Smartphone formaat */	
+@media (max-width:40em) {
+section.content_art{ 
+ column-count: 1;
+	}
